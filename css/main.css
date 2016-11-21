@@ -7,6 +7,29 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+div{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+#background{
+    z-index:1;
+    background:url('http://placehold.it/100x100&text=Background');
+}
+#middleground{
+    z-index:2;
+    background:url('http://placehold.it/250x250&text=Middleground');
+    opacity:.5;
+}
+#foreground{
+    z-index:3;
+    background:url('http://placehold.it/350x350&text=Foreground');
+    opacity:.25;
+}
  
 h1 {
   padding: 20% 0 0 0;
