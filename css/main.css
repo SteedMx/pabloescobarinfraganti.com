@@ -34,10 +34,8 @@ section {
 }
 
 #one {
-  background-image: url('../img/father_son.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+ background-color:darkgray;
+    
 }
 
 #two {
@@ -65,6 +63,7 @@ section {
 section .inner {
   margin: 0 auto;
   //max-width: 85%;
+    
 }
  
 /* Content of the following sections aligned next to the iphone */
@@ -147,3 +146,5 @@ section .innerText {
   display: block;
   color: #ff466a;
 }
+
+

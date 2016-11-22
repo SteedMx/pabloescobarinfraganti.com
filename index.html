@@ -6,7 +6,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -16,15 +18,22 @@
     </head>
     <body>
 
+
+    <section2 class="cd-background-wrapper" >
       <section id="one">
           <div class="inner innerS1">
-              <img src="/img/pabloescobar.png" id="pabloescobar">
-              <img src="/img/sebasmarroquin.png" id="sebasmarroquin">
-              <!--
-                <h1>Pablo Escobar In Fraganti</h1>-->
+              <div class="cd-background-wrapper">
+                  <figure class="cd-floating-background">
+                      <img src="img/padrehijo.png" alt="image-1">
+                      <img src="img/pablosebas.png" alt="image-2">
+			          <!--<img src="img/cd-img-3.png" alt="image-3">-->
+		          </figure>
+	           </div>
+              <!--<h1>Pablo Escobar In Fraganti</h1>-->
               <h1>La historia de <strong>Pablo Escobar Gaviria</strong> contada por su hijo Juan Pablo (Sebastián Marroquin), heredero del más famoso narcotraficante de todos los tiempos.</h1>
           </div>
       </section>
+            
       <section id="two">
           <div class="innerText innerS2">
               <h2>Why to learn ScrollMagic?</h2>
@@ -49,7 +58,9 @@
           <div class="innerText innerS4">
               <h2>Want to learn more?</h2>
           </div>
-          <div class="iphone">
+          
+         
+          <div class="iphone" >
               <img src="/img/escobar-hijo-tapa-libro_grande.png">
               <!--
               <p class="screen screenHat"><img src="img/img_scrollMagic.png" /></p>
@@ -59,6 +70,9 @@
               -->
           </div>
       </section>
+        
+    </section2>
+        
 
       <!-- Include jQuery -->
       <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
