@@ -52,15 +52,22 @@
         height auto
         position fixed
         transform initial
-        img
-            width 35%
+        .libro__grande
+            //width 35%
+            width auto    
+            height 30vh    
+            box-shadow: 0 0 15px #000, 0 0 15px #0000;
+        .available__amazon
+            display none
+            width auto    
+            height 33vh    
             box-shadow: 0 0 15px #000, 0 0 15px #0000;
     
     #two, #three, #four
         margin-top 0px
         
         .innerText
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.2);
             position initial
             transform initial
             height 100%
@@ -75,7 +82,7 @@
                 text-align center
             p
                 //el valor del margin top va relacionado en 1.8 aprox del width de la imagen del libro
-                margin 83vw 30% 0 30%
+                margin 46vh 30% 0 30%
                 color white
             ul
                 margin 0
@@ -89,10 +96,11 @@
                     font-size 1.2rem
     
     #five
-        top 90vw
+        top 49vh
         right initial
         width 100%
         z-index 2
+        justify-content center
         
         .ytImage
             display none
@@ -137,7 +145,66 @@
                 border 0
                 font-size 1.2rem
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
-            
-@media (max-width: 600px)
+
+@media (max-width: 899px)
+    #one
+        h1
+            bottom initial
+            top 78vh
+            font-size 1.5rem
+        #pabloescobar
+            width 35%
+        #sebasmarroquin
+            width 35%
     
+    .iphone
+        top 10%
+
+        .libro__grande
+            height 40vh
+        p
+            position initial
+            transform initial
+            display flex
+            justify-content center
+            padding-top 10px
+            &.screenHat 
+                img
+                    max-width 200px
+        .available__amazon
+            display block
+            height auto
+            width 200px
+    
+    #five
+        top 63vh
+        button
+            font-size 1.5rem
+        .ytImage
+            display block
+            margin 24px 5px
+    
+    #two, #three, #four
+        .innerText
+            
+            h2
+                font-size 2rem
+            p
+                margin-top 68vh
+                font-size 1.5rem
+            li
+                font-size 1.3rem
+            strong
+                font-size 1.4rem
+    #six
+        .requestForm
+            h2
+                font-size 2.5rem
+            label
+                font-size 2rem
+            input[type="text"]
+                font-size 2rem
+                height 60px
+            input[type="submit"]
+                font-size 2rem
 
