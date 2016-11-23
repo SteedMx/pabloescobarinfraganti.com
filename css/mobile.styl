@@ -1,7 +1,9 @@
 .inline
     display inline-block
 
-@media (max-width: 599px)
+//Este funciona hasta 450 aprox, pero lo dejo en 899
+//para no sobreescribir tantos estilos en los demas mq 
+@media (max-width: 899px)
     #one
         .inner
             background linear-gradient(to bottom, #fea645 0%,#fea645 50%,#fea645 50%,rgba(0,0,0,0.3) 50%,rgba(0, 0, 0, 0.3) 100%)
@@ -73,19 +75,27 @@
                 text-align center
             p
                 //el valor del margin top va relacionado en 1.8 aprox del width de la imagen del libro
-                margin 80vw 30% 0 30%
+                margin 83vw 30% 0 30%
                 color white
-            
             ul
                 margin 0
-                margin-left 50%
+                margin-right 10%
+                text-align right
                 color #fea645
+                
+                strong 
+                    color #fea645
+                    font-weight bold
+                    font-size 1.2rem
     
     #five
-        top 62%
+        top 90vw
         right initial
         width 100%
         z-index 2
+        
+        .ytImage
+            display none
     
     #six
         width 100%
@@ -126,6 +136,8 @@
                 text-align center
                 border 0
                 font-size 1.2rem
-                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
             
-        
+@media (max-width: 600px)
+    
+
