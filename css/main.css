@@ -5,6 +5,8 @@ body {
  
 html, body {
   height: 100%;
+  max-width: 100%;
+  background-color: #000;
   margin: 0;
 }
  
@@ -33,6 +35,17 @@ section {
   text-align: center;
 }
 
+#pablosebas {
+  background-image: url(../img/pablosebas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 107%;
+  width: 100%;
+}
+
 #one {
   background-image: url('../img/father_son.png');
   background-size: cover;
@@ -45,7 +58,22 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -2;
+  background-attachment: fixed;
+}
+
+#three {
+  background-image: url('../img/painting.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#four {
+  background-image: url('../img/book_design.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #five {
@@ -85,9 +113,33 @@ button p {
 
 #pabloescobar {
   position: absolute;
+  right: -17vw;
+  top: -5vh;
+  height: 125vh;
+  width: 50vw;
+  background-image: url(/img/pabloescobar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#sebasmarroquin {
+  position: absolute;
+  left: -10vw;
+  top: -5vh;
+  height: 125vh;
+  width: 50vw;
+  background-image: url(/img/sebasmarroquin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*
+#pabloescobar {
+  position: absolute;
   right: 0;
   top: 0;
   height: 100vh;
+  background-image: url('/img/pabloescobar.png');
 }
 
 #sebasmarroquin {
@@ -95,7 +147,9 @@ button p {
   left: 0;
   top: 0;
   height: 100vh;
+  background-image: url('/img/sebasmarroquin.png');
 }
+*/
  
 /* Center aligned first section */
 section .inner {
@@ -111,7 +165,7 @@ section .innerText {
   transform: translate(-100px, -50%);
   text-align: left;
 }
- 
+
 /* iPhone/Card positioned to the left - this is a default position */
 .iphone {
   position: fixed;
