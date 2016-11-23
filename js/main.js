@@ -1,9 +1,9 @@
 /* Using jQuery */
 (function($) {
   if($(window).width() >= 900) {
-    var strength1 = 50;
-    var strength2 = 100;
-    var strength3 = 100;
+    var strength1 = 25;
+    var strength2 = 50;
+    var strength3 = 50;
     $("html").mousemove(function(e){
         var pageX = e.pageX - ($(window).width() / 2);
         var pageY = e.pageY - ($(window).height() / 2);
