@@ -54,16 +54,22 @@
     width: 35%;
     box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
   }
-  #two {
+  #two,
+  #three,
+  #four {
     margin-top: 0px;
   }
-  #two .innerText {
+  #two .innerText,
+  #three .innerText,
+  #four .innerText {
     background: rgba(0,0,0,0.1);
     position: initial;
     transform: initial;
     height: 100%;
   }
-  #two .innerText h2 {
+  #two .innerText h2,
+  #three .innerText h2,
+  #four .innerText h2 {
     color: #fff;
     margin: 0px;
     margin-left: 10%;
@@ -72,11 +78,15 @@
     font-size: 1.3rem;
     text-align: center;
   }
-  #two .innerText p {
+  #two .innerText p,
+  #three .innerText p,
+  #four .innerText p {
     margin: 80vw 30% 0 30%;
     color: #fff;
   }
-  #two .innerText ul {
+  #two .innerText ul,
+  #three .innerText ul,
+  #four .innerText ul {
     margin: 0;
     margin-left: 50%;
     color: #fea645;
