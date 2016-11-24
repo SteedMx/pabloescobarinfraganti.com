@@ -61,6 +61,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  z-index: -2;
 }
 
 #three {
@@ -86,7 +87,6 @@ section {
   position: fixed;
   top: 0;
   right: 5vw;
-  z-index: -1;
 }
 
 button {
@@ -116,7 +116,7 @@ button p {
 #sebasmarroquin {
   position: absolute;
   top: -10vh;
-  right: -60vw;
+  left: 67%;
   height: 120%;
   width: 100%;
   background-image: url(/img/sebasmarroquin.png);
@@ -126,7 +126,7 @@ button p {
 
 #pabloescobar {
   position: absolute;
-  left: -45vw;
+  left: -32%;
   top: -10vh;
   height: 120%;
   width: 100%;
