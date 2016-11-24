@@ -51,7 +51,7 @@
     transform: initial;
   }
   .iphone .libro__grande {
-    width: 35%;
+    width: 35vw;
     box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
   }
   .iphone div {
@@ -92,7 +92,7 @@
     margin: 0px;
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 40px;
+    padding-top: 30px;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -183,66 +183,51 @@
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
   }
 }
-@media (min-width: 600px) and (max-width: 899px) {
-  #one h1 {
-    bottom: initial;
-    top: 78vh;
-    font-size: 1.5rem;
-  }
-  #one #pabloescobar {
-    width: 35%;
-  }
-  #one #sebasmarroquin {
-    width: 35%;
-  }
-  .iphone {
-    top: 10%;
-  }
-  .iphone .libro__grande {
-    height: 40vh;
-  }
-  #five {
-    top: 63vh;
-  }
-  #five button {
-    font-size: 1.5rem;
-  }
-  #five .ytImage {
-    display: block;
-    margin: 24px 5px;
-  }
-  #two .innerText h2,
-  #three .innerText h2,
-  #four .innerText h2 {
-    font-size: 2rem;
-  }
-  #two .innerText p,
-  #three .innerText p,
-  #four .innerText p {
-    margin-top: 68vh;
-    font-size: 1.5rem;
-  }
-  #two .innerText li,
-  #three .innerText li,
-  #four .innerText li {
-    font-size: 1.3rem;
-  }
-  #two .innerText strong,
-  #three .innerText strong,
-  #four .innerText strong {
-    font-size: 1.4rem;
-  }
-  #six .requestForm h2 {
-    font-size: 2.5rem;
-  }
-  #six .requestForm label {
-    font-size: 2rem;
-  }
-  #six .requestForm input[type="text"] {
-    font-size: 2rem;
-    height: 60px;
-  }
-  #six .requestForm input[type="submit"] {
-    font-size: 2rem;
-  }
-}
+/*@media (min-width 600px) and (max-width: 899px)
+    #one
+        h1
+            bottom initial
+            top 78vh
+            font-size 1.5rem
+        #pabloescobar
+            width 35%
+        #sebasmarroquin
+            width 35%
+    
+    .iphone
+        top 10%
+
+        .libro__grande
+            height 40vh
+    
+    #five
+        top 63vh
+        button
+            font-size 1.5rem
+        .ytImage
+            display block
+            margin 24px 5px
+    
+    #two, #three, #four
+        .innerText
+            
+            h2
+                font-size 2rem
+            p
+                margin-top 68vh
+                font-size 1.5rem
+            li
+                font-size 1.3rem
+            strong
+                font-size 1.4rem
+    #six
+        .requestForm
+            h2
+                font-size 2.5rem
+            label
+                font-size 2rem
+            input[type="text"]
+                font-size 2rem
+                height 60px
+            input[type="submit"]
+                font-size 2rem*/

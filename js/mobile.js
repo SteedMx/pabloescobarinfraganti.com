@@ -33,18 +33,18 @@ function mobile () {
       }, 600)
       libro.animate({
         width: '30vw'
-      }, 700)
+      }, 600)
       buttons.css('visibility', 'visible')
     } else {
+      buttons.css('visibility', 'hidden')
       floatingDiv.animate({
         top: '5%',
         width: '100%',
         right: 'initial'
       }, 600)
       libro.animate({
-        width: '50%'
+        width: '35vw'
       }, 700)
-      buttons.css('visibility', 'hidden')
     }
   }
 
