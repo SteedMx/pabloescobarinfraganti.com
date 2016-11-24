@@ -43,7 +43,7 @@
     top: 0;
   }
   .iphone {
-    top: 20%;
+    top: 5%;
     left: initial;
     width: 100%;
     height: auto;
@@ -51,14 +51,25 @@
     transform: initial;
   }
   .iphone .libro__grande {
-    width: auto;
-    height: 30vh;
+    width: 35%;
     box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
   }
+  .iphone div {
+    position: initial;
+    transform: initial;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .iphone .amazonBtn {
+    width: 30vw;
+    padding: 10px 20px;
+    background: #fea645;
+  }
   .iphone .available__amazon {
-    display: none;
-    width: auto;
-    height: 33vh;
+    display: block;
+    height: auto;
+    width: 25%;
     box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
   }
   #two,
@@ -88,7 +99,7 @@
   #two .innerText p,
   #three .innerText p,
   #four .innerText p {
-    margin: 46vh 30% 0 30%;
+    margin: 50px 50% 0 10%;
     color: #fff;
   }
   #two .innerText ul,
@@ -98,6 +109,7 @@
     margin-right: 10%;
     text-align: right;
     color: #fea645;
+    width: 50%;
   }
   #two .innerText ul strong,
   #three .innerText ul strong,
@@ -107,14 +119,23 @@
     font-size: 1.2rem;
   }
   #five {
-    top: 49vh;
-    right: initial;
-    width: 100%;
+    visibility: hidden;
+    top: 70vh;
     z-index: 2;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    right: initial;
+  }
+  #five button {
+    font-size: 0.9rem;
+  }
+  #five button:nth-child(1) {
+    padding: 15px 20px;
   }
   #five .ytImage {
-    display: none;
+    display: initial;
   }
   #six {
     width: 100%;
@@ -123,7 +144,7 @@
   }
   #six .requestForm {
     width: 80%;
-    height: 80%;
+    height: 90%;
     position: absolute;
     z-index: 4;
     background: #fea645;
@@ -179,21 +200,6 @@
   }
   .iphone .libro__grande {
     height: 40vh;
-  }
-  .iphone p {
-    position: initial;
-    transform: initial;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-  }
-  .iphone p.screenHat img {
-    max-width: 200px;
-  }
-  .iphone .available__amazon {
-    display: block;
-    height: auto;
-    width: 200px;
   }
   #five {
     top: 63vh;

@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -59,9 +59,9 @@
           </div>
           <div class="iphone" id="iphone">
             <img class="libro__grande" src="/img/escobar-hijo-tapa-libro_grande.png">
-            <p class="screen screenHat">
-              <img class="available__amazon" src="/img/amazon-logo_white.png"/>
-            </p>
+            <div class="screen screenHat">
+              <div class="amazonBtn">Consiguelo en Amazon</div>
+            </div>
             <!--
             <p class="screen screenA">A</p>
             <p class="screen screenB">B</p>
@@ -70,7 +70,7 @@
           </div>
       </section>
 
-      <div id="five">
+      <div id="five" class="five">
         <button type="button">EDICIÓN CON AUTÓGRAFO</button>
         <button type="button"><p>CANAL DE YOUTUBE</p><img class="ytImage" src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"></button>
       </div>
@@ -111,7 +111,9 @@
       <!-- Include ScrollMagic Indicators -->
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
+      <script src="js/hammer.min.js"></script>
       <!-- Our custom JavaScript -->
+      <script src="js/mobile.js"></script>
       <script src="js/main.js"></script>
 
     </body>

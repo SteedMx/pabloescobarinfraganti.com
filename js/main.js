@@ -89,6 +89,6 @@
     .addIndicators()
     .addTo(ctrl);
   } else {
-
+    mobile();
   }
 })(jQuery);

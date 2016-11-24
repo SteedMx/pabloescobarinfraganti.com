@@ -46,22 +46,32 @@
             top 0
     
     .iphone
-        top 20%
+        top 5%
         left initial
         width 100%
         height auto
         position fixed
         transform initial
         .libro__grande
-            //width 35%
-            width auto    
-            height 30vh    
-            box-shadow: 0 0 15px #000, 0 0 15px #0000;
+            width 35%    
+            //height 30vh
+            box-shadow: 0 0 15px #000, 0 0 15px #0000;  
+        div
+            position initial
+            transform initial
+            display flex
+            justify-content center
+            padding-top 10px
+        .amazonBtn
+            width 30vw
+            padding 10px 20px
+            background #fea645
         .available__amazon
-            display none
-            width auto    
-            height 33vh    
+            display block
+            height auto
+            width 25%
             box-shadow: 0 0 15px #000, 0 0 15px #0000;
+        
     
     #two, #three, #four
         margin-top 0px
@@ -82,28 +92,39 @@
                 text-align center
             p
                 //el valor del margin top va relacionado en 1.8 aprox del width de la imagen del libro
-                margin 46vh 30% 0 30%
+                margin 50px 50% 0 10%
                 color white
             ul
                 margin 0
                 margin-right 10%
                 text-align right
                 color #fea645
-                
+                width 50%
                 strong 
                     color #fea645
                     font-weight bold
                     font-size 1.2rem
     
     #five
-        top 49vh
-        right initial
-        width 100%
+        visibility hidden
+        top 70vh
         z-index 2
-        justify-content center
+        display flex
+        flex-direction column
+        align-items center
+        width 100%
+        right initial
+        //display block
+        //right 0px
+        //width 50%
+        //transition 4s visibility ease
+        button
+            font-size 0.9rem
+        button:nth-child(1)
+            padding 15px 20px
         
         .ytImage
-            display none
+            display initial
     
     #six
         width 100%
@@ -112,7 +133,7 @@
         
         .requestForm
             width 80%
-            height 80%
+            height 90%
             position absolute
             z-index 4
             background #fea645
@@ -162,19 +183,6 @@
 
         .libro__grande
             height 40vh
-        p
-            position initial
-            transform initial
-            display flex
-            justify-content center
-            padding-top 10px
-            &.screenHat 
-                img
-                    max-width 200px
-        .available__amazon
-            display block
-            height auto
-            width 200px
     
     #five
         top 63vh
