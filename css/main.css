@@ -1,0 +1,229 @@
+body {
+  font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+}
+ 
+html, body {
+  background-image: url('../img/father_son.png');
+  height: 100%;
+  max-width: 100%;
+  background-color: #000;
+  margin: 0;
+}
+ 
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  padding: 75vh 0 0 0;
+  margin: 0 auto;
+  width: 45%;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+ 
+p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+ 
+strong {
+  color: rgba(0, 0, 0, 0.9);
+}
+section {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*
+#pablosebas {
+  background-image: url(../img/pablosebas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 107%;
+  width: 100%;
+}*/
+
+#one {
+  background-image: url('../img/father_son.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#two {
+  background-image: url('../img/father_son_2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+#three {
+  background-image: url('../img/painting.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#four {
+  background-image: url('../img/book_design.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#five {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 5vw;
+}
+
+button {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  border-radius: 2px;
+  background-color: rgb(101, 101, 101);
+  color: #f8af62;
+  border: 0;
+  box-shadow:none;
+  margin: 15px;
+  padding: 5px 20px;
+}
+
+button img {
+  margin-top: 3px;
+  max-width: 50px;
+}
+
+button p {
+  color: #f8af62;
+  margin-right: 10px;
+}
+
+#sebasmarroquin {
+  position: absolute;
+  top: -10vh;
+  left: 67%;
+  height: 120%;
+  width: 100%;
+  background-image: url(/img/sebasmarroquin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pabloescobar {
+  position: absolute;
+  left: -32%;
+  top: -10vh;
+  height: 120%;
+  width: 100%;
+  background-image: url(/img/pabloescobar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*
+#pabloescobar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-image: url('/img/pabloescobar.png');
+}
+
+#sebasmarroquin {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-image: url('/img/sebasmarroquin.png');
+}
+*/
+ 
+/* Center aligned first section */
+section .inner {
+  margin: 0 auto;
+  //max-width: 85%;
+}
+ 
+/* Content of the following sections aligned next to the iphone */
+section .innerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px, -50%);
+  text-align: left;
+}
+
+/* iPhone/Card positioned to the left - this is a default position */
+.iphone {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -50%);
+}
+
+.iphone img {
+  max-width: 70%;
+}
+ 
+/* Centered content of the ScrollMagic card */
+.iphone p {
+  font-size: 140px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.9);
+}
+ 
+/* Letters hidden by default */
+.iphone p.screenA, .iphone p.screenB, .iphone p.screenC {
+  opacity: 0;
+  visibility: hidden;
+}
+ 
+/* ScrollMagic hat on top of letters */
+.iphone p.screenHat {
+  z-index: -1;
+}
+.iphone p.screenHat img {
+  max-width: 130px;
+}
+ 
+/* Bullet list */
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.features li {
+  position: relative;
+  padding-left: 17px;
+}
+ 
+/* A heart instead of a bullet
+.features li:before {
+  content: '❤';
+  font-size: 11px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  color: #ff466a;
+}*/

@@ -1,0 +1,233 @@
+.inline {
+  display: inline-block;
+}
+@media (max-width: 899px) {
+  #one .inner {
+    background: linear-gradient(to bottom, #fea645 0%, #fea645 50%, #fea645 50%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3) 100%);
+    height: 100%;
+  }
+  #one.landing {
+    background: url("../img/father_son.png"), #fea645;
+    background-position: bottom center, 0% center;
+    background-size: 100% 50%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #one h1 {
+    position: absolute;
+    left: 10%;
+    bottom: 15px;
+    width: 80%;
+    padding: 0;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  #one strong {
+    color: #fff;
+  }
+  #one #pabloescobar {
+    background-size: 100% 50%;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #one #sebasmarroquin {
+    background-size: 100% 50%;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .iphone {
+    top: 5%;
+    left: initial;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    transform: initial;
+  }
+  .iphone .libro__grande {
+    width: 35vw;
+    box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
+  }
+  .iphone div {
+    position: initial;
+    transform: initial;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .iphone .amazonBtn {
+    width: 30vw;
+    padding: 10px 20px;
+    background: #fea645;
+  }
+  .iphone .available__amazon {
+    display: block;
+    height: auto;
+    width: 25%;
+    box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
+  }
+  #two,
+  #three,
+  #four {
+    margin-top: 0px;
+  }
+  #two .innerText,
+  #three .innerText,
+  #four .innerText {
+    background: rgba(0,0,0,0.2);
+    position: initial;
+    transform: initial;
+    height: 100%;
+  }
+  #two .innerText h2,
+  #three .innerText h2,
+  #four .innerText h2 {
+    color: #fff;
+    margin: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #two .innerText p,
+  #three .innerText p,
+  #four .innerText p {
+    margin: 50px 50% 0 10%;
+    color: #fff;
+  }
+  #two .innerText ul,
+  #three .innerText ul,
+  #four .innerText ul {
+    margin: 0;
+    margin-right: 10%;
+    text-align: right;
+    color: #fea645;
+    width: 50%;
+  }
+  #two .innerText ul strong,
+  #three .innerText ul strong,
+  #four .innerText ul strong {
+    color: #fea645;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  #five {
+    visibility: hidden;
+    top: 70vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    right: initial;
+  }
+  #five button {
+    font-size: 0.9rem;
+  }
+  #five button:nth-child(1) {
+    padding: 15px 20px;
+  }
+  #five .ytImage {
+    display: initial;
+  }
+  #six {
+    width: 100%;
+    height: 100%;
+    background: #fea645;
+  }
+  #six .requestForm {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    z-index: 4;
+    background: #fea645;
+    padding: 10% 10%;
+  }
+  #six .requestForm h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  #six .requestForm .field {
+    margin-top: 30px;
+  }
+  #six .requestForm .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  #six .requestForm label {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  #six .requestForm input[type='text'] {
+    width: 100%;
+    height: 30px;
+    font-size: 1.4rem;
+  }
+  #six .requestForm input[type='submit'] {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  }
+}
+/*@media (min-width 600px) and (max-width: 899px)
+    #one
+        h1
+            bottom initial
+            top 78vh
+            font-size 1.5rem
+        #pabloescobar
+            width 35%
+        #sebasmarroquin
+            width 35%
+    
+    .iphone
+        top 10%
+
+        .libro__grande
+            height 40vh
+    
+    #five
+        top 63vh
+        button
+            font-size 1.5rem
+        .ytImage
+            display block
+            margin 24px 5px
+    
+    #two, #three, #four
+        .innerText
+            
+            h2
+                font-size 2rem
+            p
+                margin-top 68vh
+                font-size 1.5rem
+            li
+                font-size 1.3rem
+            strong
+                font-size 1.4rem
+    #six
+        .requestForm
+            h2
+                font-size 2.5rem
+            label
+                font-size 2rem
+            input[type="text"]
+                font-size 2rem
+                height 60px
+            input[type="submit"]
+                font-size 2rem*/
