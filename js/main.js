@@ -1,5 +1,6 @@
 /* Using jQuery */
 (function($) {
+  function startAll () {
   if($(window).width() >= 900) {
     var strength1 = 25;
     var strength2 = 50;
@@ -91,4 +92,8 @@
   } else {
     mobile();
   }
+  }
+
+  window.addEventListener('resize', startAll)
+  window.addEventListener('load', startAll)
 })(jQuery);
