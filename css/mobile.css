@@ -96,10 +96,16 @@
     font-size: 1.3rem;
     text-align: center;
   }
+  .features li {
+    font-size:1em;
+    margin-left:0;
+  }
   #two .innerText p,
   #three .innerText p,
   #four .innerText p {
     margin: 50px 50% 0 10%;
+    font-size:1em;
+    width:10em;
     color: #fff;
   }
   #two .innerText ul,
