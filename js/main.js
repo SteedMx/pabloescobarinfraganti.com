@@ -21,6 +21,7 @@
       $innerS2 = $('.innerS2'),
       $innerS3 = $('.innerS3'),
       $innerS4 = $('.innerS4'),
+      $innerS5 = $('.innerS6'),
       $screenHat = $('.screenHat'),
       $screenA = $('.screenA'),
       $screenB = $('.screenB'),
@@ -76,7 +77,7 @@
 
     // Animate the hat up, letter A in and fade in content of section 2
     var iphoneContentHat = new TimelineMax();
-    iphoneContentHat    
+    iphoneContentHat
       .to($screenHat, 1, {yPercent: 135, ease: Power4.easeOut})
       .fromTo($screenA, 1, {yPercent: 20, autoAlpha: 0, scale: 0.8}, {yPercent: 0, autoAlpha: 1, scale: 1, ease: Power4.easeOut}, '0')
       .from($innerS2, 1, {autoAlpha: 0}, '-=0.3');
