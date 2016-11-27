@@ -8,6 +8,7 @@ function mobile () {
   
   var floatingDiv = $('.iphone')
   var libro = $('.libro__grande')
+  var amazon = $('.amazonBtn')
   var buttons = $('.five')
 
   function scroll () {
@@ -35,6 +36,10 @@ function mobile () {
         width: '30vw'
       }, 600)
       buttons.css('visibility', 'visible')
+
+      if (currentSectionIndex == 1) {
+        amazon.removeClass('displayAmazon')
+      }
     } else {
       buttons.css('visibility', 'hidden')
       floatingDiv.animate({
@@ -45,6 +50,7 @@ function mobile () {
       libro.animate({
         width: '35vw'
       }, 700)
+      amazon.addClass('displayAmazon')
     }
   }
 
@@ -62,4 +68,6 @@ function mobile () {
     scroll();
     moveBook();
   })
+
+  scroll();
 }

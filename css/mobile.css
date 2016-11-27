@@ -52,6 +52,7 @@
   }
   .iphone .libro__grande {
     width: 35vw;
+    max-width: 30vw;
     box-shadow: 0 0 15px #000, 0 0 15px rgba(0,0,0,0);
   }
   .iphone div {
@@ -65,6 +66,7 @@
     width: 30vw;
     padding: 10px 20px;
     background: #fea645;
+    transition: 1s display ease;
   }
   .iphone .available__amazon {
     display: block;
@@ -150,6 +152,10 @@
     height: 100%;
     background: #fea645;
   }
+  #six .innerText {
+    position: initial;
+    transform: initial;
+  }
   #six .requestForm {
     width: 80%;
     height: 90%;
@@ -157,7 +163,6 @@
     z-index: 4;
     background: #fea645;
     padding: 10% 10%;
-    margin-top: -20rem;
   }
   #six .requestForm h2 {
     text-align: center;
@@ -176,8 +181,7 @@
   #six .requestForm input[type='text'] {
     height: 30px;
     font-size: 1.4rem;
-    width: 10rem;
-    margin-left: 7rem;
+    width: 15rem;
   }
   #six .requestForm input[type='submit'] {
     padding: 20px;
@@ -189,51 +193,82 @@
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
   }
 }
-/*@media (min-width 600px) and (max-width: 899px)
-    #one
-        h1
-            bottom initial
-            top 78vh
-            font-size 1.5rem
-        #pabloescobar
-            width 35%
-        #sebasmarroquin
-            width 35%
-    
-    .iphone
-        top 10%
-
-        .libro__grande
-            height 40vh
-    
-    #five
-        top 63vh
-        button
-            font-size 1.5rem
-        .ytImage
-            display block
-            margin 24px 5px
-    
-    #two, #three, #four
-        .innerText
-            
-            h2
-                font-size 2rem
-            p
-                margin-top 68vh
-                font-size 1.5rem
-            li
-                font-size 1.3rem
-            strong
-                font-size 1.4rem
-    #six
-        .requestForm
-            h2
-                font-size 2.5rem
-            label
-                font-size 2rem
-            input[type="text"]
-                font-size 2rem
-                height 60px
-            input[type="submit"]
-                font-size 2rem*/
+@media (min-width: 760px) and (max-width: 899px) {
+  html {
+    font-size: 24px;
+  }
+  #five {
+    top: 50vh;
+    align-items: baseline;
+  }
+  #five p {
+    margin: 0;
+    margin-top: 5px;
+  }
+  #five button {
+    width: 15rem;
+  }
+  #five button:nth-child(2) {
+    padding: 10px 25px;
+  }
+  #five .ytImage {
+    margin: 0px;
+  }
+}
+@media (orientation: landscape) {
+  .iphone .libro__grande {
+    max-width: 15vw;
+  }
+  .iphone div {
+    padding: 0;
+  }
+  .iphone .amazonBtn {
+    padding: 10px 0px;
+    width: 35vw;
+  }
+  .iphone .displayAmazon {
+    display: none;
+  }
+  #one h1 {
+    font-size: 0.8rem;
+    left: 5%;
+    width: 90%;
+  }
+  #one strong {
+    font-size: 1rem;
+  }
+  #one #sebasmarroquin {
+    background-size: contain;
+    left: 67%;
+  }
+  #one #pabloescobar {
+    background-size: contain;
+    left: 5%;
+  }
+  #two .innerText h2,
+  #three .innerText h2,
+  #four .innerText h2 {
+    padding-top: 15px;
+  }
+  #two .innerText p,
+  #three .innerText p,
+  #four .innerText p {
+    margin-top: 20px;
+    width: 50vw;
+  }
+  #five {
+    align-items: initial;
+  }
+  #five p {
+    margin: 0;
+  }
+  #five button:nth-child(1),
+  #five button:nth-child(2) {
+    width: 40%;
+    padding: 5px 0px 5px 1rem;
+    margin: 5px 15px;
+  }
+  #five .ytImage {
+    display: none;
+  }
+}
