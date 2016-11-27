@@ -46,22 +46,32 @@
             top 0
     
     .iphone
-        top 20%
+        top 5%
         left initial
         width 100%
         height auto
         position fixed
         transform initial
         .libro__grande
-            //width 35%
-            width auto    
-            height 30vh    
-            box-shadow: 0 0 15px #000, 0 0 15px #0000;
+            width 35vw  
+            //height 30vh
+            box-shadow: 0 0 15px #000, 0 0 15px #0000;  
+        div
+            position initial
+            transform initial
+            display flex
+            justify-content center
+            padding-top 10px
+        .amazonBtn
+            width 30vw
+            padding 10px 20px
+            background #fea645
         .available__amazon
-            display none
-            width auto    
-            height 33vh    
+            display block
+            height auto
+            width 25%
             box-shadow: 0 0 15px #000, 0 0 15px #0000;
+        
     
     #two, #three, #four
         margin-top 0px
@@ -77,33 +87,49 @@
                 margin 0px
                 margin-left 10%
                 margin-right 10%
-                padding-top 40px
+                padding-top 30px
                 font-size 1.3rem
                 text-align center
+            .features li
+                font-size 1rem
+                margin-left 0
             p
                 //el valor del margin top va relacionado en 1.8 aprox del width de la imagen del libro
-                margin 46vh 30% 0 30%
+                margin 50px 50% 0 10%
+                font-size 1rem
+                width 10rem
                 color white
             ul
                 margin 0
                 margin-right 10%
                 text-align right
                 color #fea645
-                
+                width 50%
                 strong 
                     color #fea645
                     font-weight bold
                     font-size 1.2rem
     
     #five
-        top 49vh
-        right initial
-        width 100%
+        visibility hidden
+        top 70vh
         z-index 2
-        justify-content center
+        display flex
+        flex-direction column
+        align-items center
+        width 100%
+        right initial
+        //display block
+        //right 0px
+        //width 50%
+        //transition 4s visibility ease
+        button
+            font-size 0.9rem
+        button:nth-child(1)
+            padding 15px 20px
         
         .ytImage
-            display none
+            display initial
     
     #six
         width 100%
@@ -112,31 +138,34 @@
         
         .requestForm
             width 80%
-            height 80%
+            height 90%
             position absolute
             z-index 4
             background #fea645
             padding 10% 10%
+            margin-top -20rem
             
             h2
                 text-align center
                 font-size 1.7rem
             .field
-                margin-top 30px
+                //margin-top 30px
             .submit
                 width 100%
                 display flex
                 justify-content center
-                margin-top 10%
+                //margin-top 10%
 
             label
                 display block
                 width 100%
                 font-size 1.5rem
             input[type='text']
-                width 100%
+                //width 100%
                 height 30px
                 font-size 1.4rem
+                width 10rem
+                margin-left 7rem
             input[type='submit']
                 padding 20px
                 background black
@@ -146,7 +175,7 @@
                 font-size 1.2rem
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
 
-@media (min-width 600px) and (max-width: 899px)
+/*@media (min-width 600px) and (max-width: 899px)
     #one
         h1
             bottom initial
@@ -162,19 +191,6 @@
 
         .libro__grande
             height 40vh
-        p
-            position initial
-            transform initial
-            display flex
-            justify-content center
-            padding-top 10px
-            &.screenHat 
-                img
-                    max-width 200px
-        .available__amazon
-            display block
-            height auto
-            width 200px
     
     #five
         top 63vh
@@ -205,5 +221,4 @@
             input[type="text"]
                 font-size 2rem
                 height 60px
-            input[type="submit"]
-                font-size 2rem
+            input[type="submit"]*/
