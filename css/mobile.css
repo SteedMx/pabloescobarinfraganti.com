@@ -60,7 +60,6 @@
     transform: initial;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
   }
   .iphone .amazonBtn {
     width: 30vw;
@@ -145,6 +144,7 @@
   }
   #five .ytImage {
     display: initial;
+    width: 50px;
   }
   #six {
     width: 100%;
@@ -223,7 +223,8 @@
   }
   .iphone .amazonBtn {
     padding: 10px 0px;
-    width: 35vw;
+    width: 15vw;
+    height: 10vh;
   }
   .iphone .displayAmazon {
     display: none;
@@ -268,6 +269,7 @@
   }
   #five p {
     margin: 0;
+    color: #e85555;
   }
   #five button:nth-child(1),
   #five button:nth-child(2) {
