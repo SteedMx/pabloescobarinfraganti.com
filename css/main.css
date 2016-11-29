@@ -48,7 +48,18 @@ section {
   top: 0;
   height: 107%;
   width: 100%;
-}*/
+  }*/
+
+.amazonBtn {
+  background-image: url('../img/amazon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+}
 
 #one {
   background-image: url('../img/father_son.png');
@@ -63,7 +74,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  z-index: -2;
+  //z-index: -2;
 }
 
 #three {
@@ -125,33 +136,35 @@ section {
 }
 
 button {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   border-radius: 2px;
   background-color: rgb(101, 101, 101);
   color: #f8af62;
   border: 0;
   box-shadow:none;
   margin: 15px;
-  padding: 5px 20px;
+  padding: 5px;
 }
 
-button img {
+button .flex__span img {
   margin-top: 3px;
-  max-width: 50px;
+  max-height: 35px;
 }
 
-button p {
+button .flex__span p {
   color: #f8af62;
-  margin-right: 10px;
+  margin: auto -60px auto 0px;
   font-size: 1em;
+}
+
+.flex__span {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 #sebasmarroquin {
   position: absolute;
-  top: -10vh;
   left: 67%;
   height: 120%;
   width: 100%;
@@ -162,8 +175,7 @@ button p {
 
 #pabloescobar {
   position: absolute;
-  left: -32%;
-  top: -10vh;
+  left: -33%;
   height: 120%;
   width: 100%;
   background-image: url(/img/pabloescobar.png);
