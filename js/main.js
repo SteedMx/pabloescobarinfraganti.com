@@ -1,18 +1,9 @@
 /* Using jQuery */
 (function($) {
   if($(window).width() >= 900) {
-
-    if (navigator.userAgent.match(/Android/i)) {
-      
-      $(window).scroll(function() {
-         var hT = $('#two').offset().top,
-             hH = $('#two').outerHeight(),
-             wH = $(window).height(),
-             wS = $(this).scrollTop();
-         if (wS > (hT+hH-wH)){
-             alert('llegar a seccion 2')
-         }
-      });
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPad/i)) {
+        $('#one').css("z-index", 5);
+        console.log('soy una tablet', navigator.userAgent)
     } else {
       var strength1 = 25;
       var strength2 = 50;
@@ -56,9 +47,9 @@
           duration: '50%'
         })
         .setPin(this)
-        .addIndicators({
+        /*.addIndicators({
           name:name
-        })
+        })*/
         .loglevel(3)
         .addTo(ctrl);
       });

@@ -67,6 +67,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #two {
@@ -87,10 +88,11 @@ section {
 }
 
 #four {
-  background-image: url('../img/book_design.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url('../img/fondo_3.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
 }
 
 #five {
@@ -101,6 +103,14 @@ section {
   position: fixed;
   top: 0;
   right: 5vw;
+}
+
+.innerS2 {
+  opacity: 1 !important;
+}
+
+.innerS2 h2, .innerS2 p {
+  visibility: visible !important;
 }
 
 /* Contact form*/

@@ -1,6 +1,7 @@
 const {resolve} = require('path')
 const webpackValidator = require('webpack-validator')
 const {getIfUtils} = require('webpack-config-utils')
+const webpack = require('webpack')
 
 module.exports = env => {
   const {ifProd, ifNotProd} = getIfUtils(env)
@@ -20,6 +21,13 @@ module.exports = env => {
         {test: /\.css$/, loaders: ['style', 'css']},
       ],
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery",
+          "window.jQuery": "jquery"
+      })
+    ]
   })
   if (env.debug) {
     console.log(config)
