@@ -71,19 +71,19 @@ section {
 }
 
 #two {
-  background-image: url('../img/father_son_2.png');
+  background-image: url('/img/fondo_2.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   //z-index: -2;
 }
 
 #three {
-  background-image: url('../img/painting.jpeg');
+  background-image: url('/img/fondo_1.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0% 20%;
   background-attachment: fixed;
 }
 
@@ -115,10 +115,10 @@ section {
 
 /* Contact form*/
 #six {
-  background-image: url('../img/painting.jpeg');
+  background-image: url('/img/fondo_4.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0% 10%;
   background-attachment: fixed;
 }
 
@@ -165,6 +165,7 @@ button .flex__span p {
   color: #f8af62;
   margin: auto -60px auto 0px;
   font-size: 1em;
+  padding: 10px;
 }
 
 .flex__span {
@@ -228,13 +229,13 @@ section .innerText {
 /* iPhone/Card positioned to the left - this is a default position */
 .iphone {
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-150%, -50%);
 }
 
 .iphone img {
-  max-width: 70%;
+  max-width: 50%;
 }
 /* Centered content of the ScrollMagic card */
 .iphone p {
@@ -258,6 +259,12 @@ section .innerText {
 .iphone p.screenHat img {
   max-width: 130px;
 }
+
+.iphone .screen a img {
+  display: inline-block;
+  max-height: 100px;
+}
+
 /* Bullet list */
 .features {
   list-style: none;
