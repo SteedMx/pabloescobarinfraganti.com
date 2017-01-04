@@ -1,0 +1,101 @@
+extends layout
+
+block content
+
+  // Preloader
+  #preloader
+    #status
+  // FullScreen
+  .intro-header
+    .absolute-pos
+      .inner-border
+        .row
+          .col-xs-9
+          .col-xs-3.social_icons_container.zindex
+            a.icon_link(href='#')
+              i.fa.fa-facebook.fa-size  
+            a.icon_link(href='#')
+              i.fa.fa-twitter.fa-size  
+            a.icon_link(href='#')
+              i.fa.fa-youtube.fa-size  
+    .main
+      .titulo_izquierda
+        img(src='img/titulo_pablo.png', alt='', width='100%', height='auto')
+      .titulo_derecha
+        img(src='img/titulo_fraganti.png', alt='', width='100%', height='auto')
+      .one
+      .two
+    .col-xs-12.full_height_container.align_center_vertically.align_center_horizontally.book_cover_container
+      img.book_cover(src='img/escobar-hijo-tapa-libro.png', alt='')
+  .yellow_gradient.main_text
+    .container
+      .row
+        .col-md-4.col-xs-12.pad_height.margin-top
+          a.black_btn.bebas.align_center_vertically(href='#edicioncoleccion')
+            | Ordena la edición de colección
+        .col-md-1.pad_height
+        .col-md-6.col-xs-12.pad_height
+          h4
+            | La historia de Pablo Escobar Gaviria contada por su hijo Juan Pablo (Sebastián Marroquin), heredero del más famoso narcotraficante de todos los tiempos.
+        .col-md-1
+  .book_stores_bar
+    .row
+      .col-sm-3.col-md-3.col-xs-1
+      .col-sm-8.col-md-6.col-xs-10.pad_height.book_stores
+        .book_stores_container
+          .available_text Disponible en:
+          a.book_store_link(href='')
+            img.book_store_image(src='img/boton_appstore.png', alt='')
+          a.book_store_link(href='')
+            img.book_store_image(src='img/boton_amazon.png', alt='')
+          a.book_store_link(href='')
+            img.book_store_image(src='img/botton_google.png', alt='')
+      .col-sm-2.col-md-2.col-xs-1
+  .youtube_bar
+    // <div class="youtube_line"></div>
+    .container
+      .row.youtube
+        .col-xs-4.col-md-2.col-sm-1.hidden-lg
+        .col-xs-4.col-sm-3.pad_height
+          .youtube_logo_container
+            img.youtube_logo(src='img/youtube_logo.png', alt='')
+        .col-xs-4.col-sm-2.col-md-1
+        .col-xs-12.col-sm-7.text-center.channel_text
+          | CONOCE EL CANAL DE YOUTUBE
+  .black_gradient.edicioncoleccion
+    .container.pad_height
+      .row
+        .col-xs-2
+        .col-xs-8.text-center
+          h2.bebas.white_header.special_edition-header EDICIóN DE COLECCIóN
+        .col-xs-2
+      .row.pad_height
+        .col-xs-12.col-md-6.pad_height
+          .info_text
+            | Recibe una edición exclusiva de lujo solo para coleccionistas, disfruta con un delicioso café colombiano con tu libro autografiado por el autor Juan Pablo Escobar (Sebastian Marroquin) con un video especial dedicado solo para ti.
+          .info_text
+            | Regístrate y conviértete en uno de los primeros miembros oficiales de la comunidad “Don Pablo Escobar TV” en recibir este material inedito sobre la vida y obra de Pablo Escobar contado desde la optica y perspectiva de su hijo Juan Pablo.
+          .info_text
+            | Reserva un pase V.I.P y confirmar tus datos para ser uno de los primeros en recibirlo.
+        .col-xs-1
+        .col-xs-12.col-md-4.pad_height
+          .form_container
+            .little_text
+              | Recibe una copia digital autografiada del libro Pablo Escobar IN FRAGANTI con un video exclusivo.
+            form.contact_form(action='/', name='escobarform', id='escobarform', method='post')
+              input(name='names', type='text', placeholder='Nombre', id='names')
+              input(name='lastnames', type='text', placeholder='Apellido', id='lastnames')
+              input(name='email', type='email', placeholder='Correo electrónico', id='email')
+              input.black_btn.bebas.align_center_vertically.submit_button(name='submit', type='submit', value='ENVIAR', id='submit')
+    div
+      .yellow_gradient
+        .row
+          .col-xs-3.col-sm-9
+          .col-xs-6.col-sm-2.social_icons_container.flex_center
+            a.icon_link(href='#')
+              i.fa.fa-facebook.fa-size  
+            a.icon_link(href='#')
+              i.fa.fa-twitter.fa-size  
+            a.icon_link(href='#')
+              i.fa.fa-youtube.fa-size  
+          .col-xs-3
